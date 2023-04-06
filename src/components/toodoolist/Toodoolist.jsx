@@ -1,13 +1,20 @@
 import style from './toodoolist.module.scss';
 
-const Toodoolist = () => {
+const Toodoolist = ({ todos }) => {
+  console.log(todos);
+
   return (
     <div className={style.toodoolist}>
       <ul className={style.list}>
-        <li className={style.listitem}>dscsdcsdc</li>
-        <li className={style.listitem}>fgnfgb</li>
-        <li className={style.listitem}>wesswedfcs</li>
-        <li className={style.listitem}>ymutumhgh</li>
+        {todos.map(item => (
+          <li key={todos.id} className={style.listitem}>
+            <input type="checkbox" />
+            {item}
+            <button typeof="button" className={style.button}>
+              Delete item
+            </button>
+          </li>
+        ))}
       </ul>
     </div>
   );
