@@ -1,0 +1,22 @@
+.header {
+  background-image: url('../galary/images/bg-mobile-light.jpg');
+  background-repeat: no-repeat;
+  width: 375px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+.headerwrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.modeicon {
+  // display: block;
+  width: 20px;
+  height: 20px;
+  fill: black;
+}
