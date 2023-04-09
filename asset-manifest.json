@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/practice-with-Sergey/static/css/main.5f07b055.css",
-    "main.js": "/practice-with-Sergey/static/js/main.654c6a30.js",
+    "main.js": "/practice-with-Sergey/static/js/main.f7ab9012.js",
     "index.html": "/practice-with-Sergey/index.html",
     "static/media/icon-sun.svg": "/practice-with-Sergey/static/media/icon-sun.910b1f9a23741afc341e95653a51f14f.svg",
     "main.5f07b055.css.map": "/practice-with-Sergey/static/css/main.5f07b055.css.map",
-    "main.654c6a30.js.map": "/practice-with-Sergey/static/js/main.654c6a30.js.map"
+    "main.f7ab9012.js.map": "/practice-with-Sergey/static/js/main.f7ab9012.js.map"
   },
   "entrypoints": [
     "static/css/main.5f07b055.css",
-    "static/js/main.654c6a30.js"
+    "static/js/main.f7ab9012.js"
   ]
 }
