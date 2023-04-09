@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/practice-with-Sergey/static/css/main.1a3f38ea.css",
-    "main.js": "/practice-with-Sergey/static/js/main.61f38edf.js",
+    "main.css": "/practice-with-Sergey/static/css/main.5f07b055.css",
+    "main.js": "/practice-with-Sergey/static/js/main.654c6a30.js",
     "index.html": "/practice-with-Sergey/index.html",
     "static/media/icon-sun.svg": "/practice-with-Sergey/static/media/icon-sun.910b1f9a23741afc341e95653a51f14f.svg",
-    "main.1a3f38ea.css.map": "/practice-with-Sergey/static/css/main.1a3f38ea.css.map",
-    "main.61f38edf.js.map": "/practice-with-Sergey/static/js/main.61f38edf.js.map"
+    "main.5f07b055.css.map": "/practice-with-Sergey/static/css/main.5f07b055.css.map",
+    "main.654c6a30.js.map": "/practice-with-Sergey/static/js/main.654c6a30.js.map"
   },
   "entrypoints": [
-    "static/css/main.1a3f38ea.css",
-    "static/js/main.61f38edf.js"
+    "static/css/main.5f07b055.css",
+    "static/js/main.654c6a30.js"
   ]
 }
