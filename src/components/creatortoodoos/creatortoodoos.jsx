@@ -1,18 +1,29 @@
-import { useState } from 'react';
 import style from './creatortoodoos.module.scss';
 
-const CreateTodos = ({ todos, setTodos, id, setId }) => {
+const CreateTodos = ({ todos, setTodos }) => {
   const createToDos = event => {
     event.preventDefault();
+    const setId = () => {
+      return todos.length + 1;
+    };
 
     const form = event.currentTarget;
-    setTodos([...todos, form.elements.input.value]);
+    setTodos([
+      ...todos,
+      {
+        id: setId(),
+        title: form.elements.input.value,
+      },
+    ]);
   };
 
   return (
     <div className={style.formwrapper}>
       <form className={style.form} action="submit" onSubmit={createToDos}>
         <input className={style.input} type="text" name="input" />
+        <button type="submit" className={style.button}>
+          Add
+        </button>
       </form>
     </div>
   );
