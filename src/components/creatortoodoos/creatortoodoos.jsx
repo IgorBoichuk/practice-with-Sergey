@@ -1,20 +1,13 @@
 import style from './creatortoodoos.module.scss';
 
-const CreateTodos = ({ todos, setTodos }) => {
+const CreateTodos = ({ addTodo }) => {
   const createToDos = event => {
     event.preventDefault();
-    const setId = () => {
-      return todos.length + 1;
-    };
 
     const form = event.currentTarget;
-    setTodos([
-      ...todos,
-      {
-        id: setId(),
-        title: form.elements.input.value,
-      },
-    ]);
+    addTodo(form.input.value);
+    form.reset();
+    form.input.focus();
   };
 
   return (

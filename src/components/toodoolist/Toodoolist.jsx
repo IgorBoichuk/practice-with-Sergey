@@ -1,11 +1,8 @@
 import style from './toodoolist.module.scss';
 
-const Toodoolist = ({ todos, setTodos }) => {
-  console.log(todos);
-
+const Toodoolist = ({ todos, deleteTodo, handleComplete }) => {
   const handleDelete = id => {
-    setTodos(prevState => [...prevState.todos.filter(todo => todo.id !== id)]);
-    console.log(todos.id);
+    deleteTodo(id);
   };
 
   return (
@@ -13,7 +10,11 @@ const Toodoolist = ({ todos, setTodos }) => {
       <ul className={style.list}>
         {todos.map(item => (
           <li key={item.id} className={style.listitem}>
-            <input type="checkbox" />
+            <input
+              type="checkbox"
+              onChange={() => handleComplete(item.id)}
+              checked={item.completed}
+            />
             {item.title}
             <button
               typeof="button"
