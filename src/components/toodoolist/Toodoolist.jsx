@@ -1,6 +1,6 @@
 import style from './toodoolist.module.scss';
 
-const Toodoolist = ({ todos, deleteTodo, handleComplete }) => {
+const Toodoolist = ({ todos, deleteTodo, handleComplete, filteredTodos }) => {
   const handleDelete = id => {
     deleteTodo(id);
   };
